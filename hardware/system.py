@@ -131,6 +131,7 @@ def detect(output=None):
                 _find_element(elt, "configuration/setting[@id='firmware']",
                               'firmware', name.text, 'network', 'value')
                 _find_element(elt, 'size', 'size', name.text, 'network')
+                _find_element(elt, 'capacity', 'capacity', name.text, 'network')
                 ipv4 = _find_element(elt, "configuration/setting[@id='ip']",
                                      'ipv4',
                                      name.text, 'network', 'value')
